@@ -40,10 +40,31 @@ _MyCustomObject.m_
 
 * Add MyCustomObject.h to MyStaticLibrary.h (optional) 
 
+_MyStaticLibrary.h_
+
+    #import <Foundation/Foundation.h>
+    #import "MyCustomObject.h"
+
+    @interface MyStaticLibrary : NSObject
+    @end
 
 ####1.3 Compile the lib for ios et simulator
+We need now to build .a file (compiled library file)
 
-####1.4 look at the directory we must merge the two library 
+We must compile for ios device **AND** for ios simulator (i386 arch)
+* Select MyStaticLibrary > iOs Device and Build (&#x2318; + B)
+* Select MyStaticLibrary > iPhone 6.1 Simulator and Build (&#x2318; + B)
+
+####1.4 Look at the directory we must merge the two library 
+* Expand Products in File Browser view 
+* Select libMyStaticLibrary.a
+* Right Button > Show in Finder 
+* Move up in directory
+
+You must have this hierarchy
+
+
+
 
 ==================
 ###2. Create a new project who use the library
