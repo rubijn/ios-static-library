@@ -62,8 +62,19 @@ We must compile for ios device **AND** for ios simulator (i386 arch)
 * Move up in directory
 
 You must have this hierarchy
+* Products/Debug-iphoneos/libMyStaticLibrary.a
+* Products/Debug-iphonesimulator/libMyStaticLibrary.a
 
+For using this two library in a new project, we must merge it in one single file .a
 
+* open Terminal
+* cd <directory of library>/Products/
+
+Launch this command
+   
+    lipo -create Products/Debug-iphoneos/libMyStaticLibrary.a Products/Debug-iphonesimulator/libMyStaticLibrary.a -output libMyStaticLibrary.a
+    
+After that we can use this new merged library in a new project     
 
 
 ==================
