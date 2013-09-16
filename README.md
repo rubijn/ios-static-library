@@ -223,7 +223,7 @@ Containing merged (universal) library and headers
 
 That all !
 
-Inspired from 
+**Inspired from**<br/> 
 http://www.raywenderlich.com/41377/creating-a-status-library-in-ios-tutorial<br/>
 and<br/>
 http://blog.coderow.com/2012/08/23/building-an-ios-universal-static-library/
