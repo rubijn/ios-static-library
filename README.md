@@ -16,7 +16,11 @@ This is help for video http://youtu.be/XkcpiCIGxe4
 * Select Objective-C class 
 * Name the file MyCustomObject
 * Add this method to the interface MyCustomObject.h
-    -(void)aMethod;
+
+
+    @interface MyCustomObject : NSObject
+      -(void)aMethod;
+    @end
 
 Chose add new file 
 Name the file MyCustomObject 
