@@ -1,7 +1,7 @@
 Tutorial for create a static library on ios
 ==================
 
-This is help for video http://www.youtube.com/f7lxkv-sZA0
+This is help for video http://youtu.be/XkcpiCIGxe4
 ###1. Create static library
 
 ####1.1 Create from template 
