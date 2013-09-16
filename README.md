@@ -15,12 +15,22 @@ This is help for video http://youtu.be/XkcpiCIGxe4
 * Choose iOs / Cocoa Touch 
 * Select Objective-C class 
 * Name the file MyCustomObject
-* Add this method to the interface MyCustomObject.h
+* Add this method to the @interface and @implementation
 
+_MyCustomObject.h_
 
     @interface MyCustomObject : NSObject
       -(void)aMethod;
     @end
+
+_MyCustomObject.m_
+
+    @implementation MyCustomObject
+      -(void)aMethod {
+        NSLog(@"call MyCustomObject method !");
+    }
+    @end
+
 
 Chose add new file 
 Name the file MyCustomObject 
@@ -72,7 +82,7 @@ Add usage of UIImage hasAlpha
 
 ####4.3 Enter the scripts bellow
 
-# set target for final .a file
+    # set target for final .a file
     TARGET_OUTPUT=${BUILD_DIR}/${CONFIGURATION}-universal
 
     # compile projet in 2 version iphoneos and iphonesimulator
