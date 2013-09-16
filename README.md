@@ -1,62 +1,63 @@
 Tutorial for create a static library on ios
 ==================
 
-#1. Create static library
+This is help for video http://youtu.be/XkcpiCIGxe4
+###1. Create static library
 
-##1.1 Create from template 
+####1.1 Create from template 
 Chose Static Lib Template
 Name the project MyStaticLibrary
 
-##1.2 Create a custom object
+####1.2 Create a custom object
 Chose add new file 
 Name the file MyCustomObject 
 Add a simple to method aMethod
 Add the header to the main header file 
 Add the header to the build phase copie
 
-##1.3 Compile the lib for ios et simulator
+####1.3 Compile the lib for ios et simulator
 
-##1.4 look at the directory we must merge the two library 
+####1.4 look at the directory we must merge the two library 
 
 ==================
-#2. Create a new project who use the library
+###2. Create a new project who use the library
 
-##2.1 Create from simple view
+####2.1 Create from simple view
 Name it MyAppUsingCustomLibrary
 
-##2.2 Drag the .a file and include from the build directory
+####2.2 Drag the .a file and include from the build directory
 
-##2.3 in Viewcontroller add a call to MyCustomObject
+####2.3 in Viewcontroller add a call to MyCustomObject
 
-##2.4 compile it's work
+####2.4 compile it's work
 
 ==================
-#3. Use categories in library 
+###3. Use categories in library 
 
-##3.1 create a UIImage-Custom class
+####3.1 create a UIImage-Custom class
 Add hasAlpha method to UIImage
 
-##3.2 import the UIKit in library project
+####3.2 import the UIKit in library project
 
-##3.3 compile for iphone an simulator 
+####3.3 compile for iphone an simulator 
 
-##3.4 return to app who use the library 
+####3.4 return to app who use the library 
 Add usage of UIImage hasAlpha
 
-##3.5 Compile = BUG de link
+####3.5 Compile = BUG de link
 
-##3.6 Add -ObjC -all_load to Other link flags 
+####3.6 Add -ObjC -all_load to Other link flags 
 
-##3.7 Compile it's work 
+####3.7 Compile it's work 
 
 ==================
-#4. Automate the merge for iphone and simulator 
+###4. Automate the merge for iphone and simulator 
 
-##4.1 Add a Aggregate target to library project MyStaticLibraryAggregate
+####4.1 Add a Aggregate target to library project MyStaticLibraryAggregate
 
-##4.2 Add Build Script 
+####4.2 Add Build Script 
 
-##4.3 Enter the scripts bellow
+####4.3 Enter the scripts bellow
 
 # set target for final .a file
     TARGET_OUTPUT=${BUILD_DIR}/${CONFIGURATION}-universal
@@ -74,9 +75,9 @@ Add usage of UIImage hasAlpha
     # copy header to universal lib
     cp -R "${BUILD_DIR}/${CONFIGURATION}-iphoneos/include" "${TARGET_OUTPUT}/"
 
-##4.4 Compile and go to build dir for see new directory
+####4.4 Compile and go to build dir for see new directory
 
-##4.5 Change link in app project for use the new directory 
+####4.5 Change link in app project for use the new directory 
 
 That all !
 
