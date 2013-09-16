@@ -207,8 +207,19 @@ Build and now the categroy working
     cp -R "${BUILD_DIR}/${CONFIGURATION}-iphoneos/include" "${TARGET_OUTPUT}/"
 
 ####4.4 Compile and go to build dir for see new directory
+* Build > MyStaticLibraryAggregate
+
+Check if no error come from sh script<br/>
+Now whe have a new Directory 
+
+    Products/Debug-universal/
+
+Containing merged (universal) library and headers 
 
 ####4.5 Change link in app project for use the new directory 
+* Return to MyAppUsingCustomLibrary
+* Remove old libMyStaticLibrary.a and includes link
+* Add from Products/Debug-universal/libMyStaticLibrary.a and Products/Debug-universal/includes
 
 That all !
 
