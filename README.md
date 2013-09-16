@@ -154,11 +154,24 @@ Edit _Viewcontroller.m_
     NSLog(@"hasAlpha ? %i", [img hasAlpha]);
     [img release];
 
-####3.5 Compile = BUG de link
+####3.5 Compile = Error
+
+    *** Terminating app due to uncaught exception 'NSInvalidArgumentException', 
+    reason: '-[UIImage hasAlpha]: unrecognized selector sent to instance 0x8a437a0'
+
+We need to add flags to the Build Settings
 
 ####3.6 Add -ObjC -all_load to Other link flags 
+* Select Target 
+* Select Build Settings tab
+* In the search input enter "other linker"
+* Select Other Linker Flags 
+* Add -ObjC and -all_load
 
 ####3.7 Compile it's work 
+Build and now the categroy working
+
+    2013-09-16 23:51:44.621 MyAppUsingCustomLibrary[1289:c07] hasAlpha ? 0
 
 ==================
 ###4. Automate the merge for iphone and simulator 
