@@ -5,10 +5,19 @@ This is help for video http://youtu.be/XkcpiCIGxe4
 ###1. Create static library
 
 ####1.1 Create from template 
-Chose Static Lib Template
-Name the project MyStaticLibrary
+* File > New > Project
+* Chose iOs / Framework & Library
+* Select Cocoa Touch Static Library
+* Name the project MyStaticLibrary
 
 ####1.2 Create a custom object
+* File > New > File
+* Choose iOs / Cocoa Touch 
+* Select Objective-C class 
+* Name the file MyCustomObject
+* Add this method to the interface MyCustomObject.h
+    -(void)aMethod;
+
 Chose add new file 
 Name the file MyCustomObject 
 Add a simple to method aMethod
