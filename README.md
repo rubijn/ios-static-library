@@ -1,9 +1,12 @@
 Tutorial for create a static library on ios
 ==================
 
-[Create Template](https://github.com/rubijn/ios-static-library/blob/master/README.md#1-create-static-library "texte pour le titre, facultatif")
 
 This is help for video http://youtu.be/f7lxkv-sZA0
+
+[1. Create Template](https://github.com/rubijn/ios-static-library/blob/master/README.md#1-create-static-library)
+
+
 ###1. Create static library
 
 ####1.1 Create from template 
