@@ -4,7 +4,7 @@ Tutorial for create a static library on ios
 
 This is help for video http://youtu.be/f7lxkv-sZA0
 
-[1. Create Static Library](https://github.com/rubijn/ios-static-library/blob/master/README.md#1-create-static-library)
+[1. Create Static Library](https://github.com/rubijn/ios-static-library/blob/master/README.md#1-create-static-library)<br/>
 [2. Create Project who use the library](https://github.com/rubijn/ios-static-library/blob/master/README.md#1-create-static-library)
 
 
