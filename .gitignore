@@ -36,3 +36,7 @@
 ehthumbs.db
 Thumbs.db
 
+# videos #
+######################
+screencast
+*.mov
