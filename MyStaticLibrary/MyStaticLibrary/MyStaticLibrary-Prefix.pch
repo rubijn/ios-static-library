@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MyStaticLibrary' target in the 'MyStaticLibrary' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
