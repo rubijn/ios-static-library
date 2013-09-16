@@ -5,6 +5,7 @@ This is help for video http://youtu.be/XkcpiCIGxe4
 ###1. Create static library
 
 ####1.1 Create from template 
+First we must create a static library project
 * File > New > Project
 * Chose iOs / Framework & Library
 * Select Cocoa Touch Static Library
@@ -31,12 +32,14 @@ _MyCustomObject.m_
     }
     @end
 
+* Add MyCustomObject.h to build phase 
+  * Select target MyStaticLibrary
+  * Select Build Phases tab
+  * Expend Copy Files 
+  * Click on + to add MyCustomObject.h
 
-Chose add new file 
-Name the file MyCustomObject 
-Add a simple to method aMethod
-Add the header to the main header file 
-Add the header to the build phase copie
+* Add MyCustomObject.h to MyStaticLibrary.h (optional) 
+
 
 ####1.3 Compile the lib for ios et simulator
 
