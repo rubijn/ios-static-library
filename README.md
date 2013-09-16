@@ -1,4 +1,4 @@
-Tutorial for create a static library on ios
+Video Tutorial for create a static library on ios
 ==================
 [@rubijn](https://twitter.com/rubijn)
 
