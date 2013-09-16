@@ -111,10 +111,34 @@ Look at the output pannel
 ==================
 ###3. Use categories in library 
 
+When we want to use a custom category in your library follow this method.
+
 ####3.1 create a UIImage-Custom class
-Add hasAlpha method to UIImage
+* File > New > File
+* Choose iOs / Cocoa Touch 
+* Select Objective-C class 
+* Name the file UIImage-Custom
+* Add this method to the @interface and @implementation
+
+_UIImage-Custom.h_
+
+    @interface UIImage (Alpha)
+    -(BOOL)hasAlpha;
+    @end
+    
+_UIImage-Custom.m_
+
+    @implementation UIImage (Alpha)
+    -(BOOL)hasAlpha {
+      return NO;
+    }
+    @end
 
 ####3.2 import the UIKit in library project
+* Select MyStaticLibrary Target
+* Select Build Phases 
+* Expend Link Binary
+* Add UIKit
 
 ####3.3 compile for iphone an simulator 
 
