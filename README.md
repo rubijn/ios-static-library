@@ -141,9 +141,18 @@ _UIImage-Custom.m_
 * Add UIKit
 
 ####3.3 compile for iphone an simulator 
+* Build / iOs Device
+* Build / iPhone Simulator
+* Merge the two .a with the lipo command see at 1.4
 
 ####3.4 return to app who use the library 
 Add usage of UIImage hasAlpha
+
+Edit _Viewcontroller.m_
+    
+    UIImage *img = [[UIImage alloc] init];
+    NSLog(@"hasAlpha ? %i", [img hasAlpha]);
+    [img release];
 
 ####3.5 Compile = BUG de link
 
