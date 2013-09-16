@@ -177,8 +177,16 @@ Build and now the categroy working
 ###4. Automate the merge for iphone and simulator 
 
 ####4.1 Add a Aggregate target to library project MyStaticLibraryAggregate
+* File > New > Target 
+* Select Other
+* Select Aggregate
+* Enter name MyStaticLibraryAggregate
 
 ####4.2 Add Build Script 
+* Select target MyStaticLibraryAggregate
+* Select Build Phases Tab
+* Click on Add Build Phase (bottom right)
+* Add Run Scripts
 
 ####4.3 Enter the scripts bellow
 
