@@ -7,7 +7,7 @@ This is help for video http://youtu.be/f7lxkv-sZA0
 [1. Create Static Library](https://github.com/rubijn/ios-static-library/blob/master/README.md#1-create-static-library)<br/>
 [2. Create Project who use the library](https://github.com/rubijn/ios-static-library/blob/master/README.md#2-create-a-new-project-who-use-the-library)<br/>
 [3. Use categories in library](https://github.com/rubijn/ios-static-library/blob/master/README.md#3-use-categories-in-library)
-
+[4. Add Automate for merging categories](https://github.com/rubijn/ios-static-library/blob/master/README.md#4-automate-the-merge-for-iphone-and-simulator)
 
 ###1. Create static library
 
