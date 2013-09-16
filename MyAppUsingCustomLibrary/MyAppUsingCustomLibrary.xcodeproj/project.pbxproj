@@ -311,13 +311,11 @@
 				INFOPLIST_FILE = "MyAppUsingCustomLibrary/MyAppUsingCustomLibrary-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/MyStaticLibrary-dtbxtelrfnbiczftinjmasdjdxxa/Build/Products\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/MyStaticLibrary-dtbxtelrfnbiczftinjmasdjdxxa/Build/Products/Debug-universal\"",
 					"\"$(SRCROOT)/build\"",
 				);
 				OTHER_LDFLAGS = (
-					"-ObjC",
 					"-all_load",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -332,13 +330,11 @@
 				INFOPLIST_FILE = "MyAppUsingCustomLibrary/MyAppUsingCustomLibrary-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/MyStaticLibrary-dtbxtelrfnbiczftinjmasdjdxxa/Build/Products\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/MyStaticLibrary-dtbxtelrfnbiczftinjmasdjdxxa/Build/Products/Debug-universal\"",
 					"\"$(SRCROOT)/build\"",
 				);
 				OTHER_LDFLAGS = (
-					"-ObjC",
 					"-all_load",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -364,6 +360,7 @@
 				3BC6A45F17E758ED0048E6EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

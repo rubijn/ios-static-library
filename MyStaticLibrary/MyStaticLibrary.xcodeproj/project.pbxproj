@@ -303,6 +303,7 @@
 				3BC6A42917E758510048E6EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BC6A46D17E75A2D0048E6EC /* Build configuration list for PBXAggregateTarget "MyStaticLibraryAggregate" */ = {
 			isa = XCConfigurationList;
@@ -311,6 +312,7 @@
 				3BC6A46F17E75A2D0048E6EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
